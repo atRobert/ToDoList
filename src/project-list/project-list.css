@@ -1,0 +1,153 @@
+.project-item{
+    display: block;
+    width:97%;
+    transition: .25s ease;
+    background-color: rgb(192, 192, 192);
+    text-align: center;
+    border-radius:10px 0px 0px 10px;
+    float:right;
+    margin-bottom:5px;
+  }
+  
+  .project-item:hover{
+    background:rgb(129, 129, 129);
+  }
+
+
+  .remove-project-button{
+    width: 30px;
+    position:relative;
+    top: 0px;
+    left:0px;
+    z-index: 900;
+    border-radius:5px 0px 5px 0px;
+    border: 1px rgb(0, 225, 255) solid;
+    border-left:1px transparent;
+    border-top:1px transparent;
+    background:rgb(31, 31, 31);
+    display: none;
+  }
+
+  .project-item-text{
+    padding:20px;
+  }
+
+  .active-project .project-item-text{
+    padding-top:0px;
+  }
+  
+  .active-project .remove-project-button{
+    display: block
+  }
+
+  .active-project .remove-project-button:hover{
+    color:red
+  }
+
+  .active-project{
+    background: black;
+    color: rgb(0, 225, 255);
+    border: 1px solid rgb(0, 225, 255);
+    width:90%;
+    border-right:none;
+  
+  }
+  
+  .active-project:hover{
+    background:black;
+    
+  }
+  
+  .add-project{
+    display: block;
+    width: 50%;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: .25s ease;
+    background:rgb(0, 225, 255);
+    color: black;
+    border:1px solid black;
+    text-align:center;
+    border-radius:10px;
+    margin:auto;
+    margin-bottom:10px;
+  }
+  
+  .add-project:hover{
+    background: black;
+    color: rgb(0, 225, 255);
+    border: 1px solid rgb(0, 225, 255);
+  }
+
+  #page-mask {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 900;
+  }
+
+  #add-project-form {
+    height: 400px;
+    width: 600px;
+    position:fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    background:black;
+    border-radius:5px;
+    color:white;
+    z-index: 900;
+  }
+
+form input[type=text], form textarea{
+  width: 85%;
+  
+  margin:auto;
+  margin:10px;
+  resize: none;
+  border:1px transparent;
+  border-radius:3px;
+  padding:10px;
+}
+
+form input[type=text]{
+  height:20px;
+}
+
+form ul{
+  list-style: none;
+  padding-left:40px;
+  padding-right:40px;
+}
+
+
+form input[type=submit]{
+  width: 60px;
+  height: 30px;
+  border: 1px transparent;
+  border-radius:3px;
+  margin:5px;
+  background: rgb(0, 225, 255);
+  color: black;
+  border: 1px solid black;
+  transition: .25s ease;
+}
+
+form input[type=submit]:hover{
+  background: black;
+  color: rgb(0, 225, 255);
+  border: 1px solid rgb(0, 225, 255);
+}
+
+#submit-btn-container{
+  display: flex;
+  justify-content: center;
+}
+
+.project-tab-complete{
+  border: 1px green solid;
+  background-color: rgb(109, 201, 109);
+}

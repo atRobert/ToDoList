@@ -1,0 +1,237 @@
+.project-description{
+    margin-left:5%;
+    margin-top:20px
+  }
+
+
+.spacer-col{
+  width:40px;
+}
+
+#task-list-container{
+  margin-left:30px;
+}
+
+.task-check-container{
+  height:20px;
+  width:20px;
+  border-radius:5px;
+  border:1px solid black;
+  display: inline-block;
+  transition: border .2s ease;
+}
+
+.task-container{
+  width:80%;
+  height:auto;
+  display: block;
+  transition: .2s ease;
+  margin-bottom:10px;
+  transition: color .2s ease;
+  border: 1px transparent;
+  margin-bottom:10px;
+}
+
+.complete-task{
+  font-size: 15px;
+  text-align: center;
+  color:green
+}
+
+.complete-task:hover{
+  color:red;
+}
+
+.task-container:hover{
+  background: rgba(0, 0, 0, 0.575);
+  color: rgb(0, 225, 255);
+  border: 1px solid rgb(0, 225, 255);
+  border-radius:5px;
+}
+
+.task-container:hover .task-check-container{
+  border-radius: 5px 0px 5px 0px;
+  color: rgb(0, 225, 255);
+  border: 1px solid rgb(0, 225, 255);
+  border-left:none;
+  border-top:none;
+}
+
+.task-container:hover .task-remove-container{
+  display:inline-block;
+  height:20px;
+  width:20px;
+  border: 1px solid rgb(0, 225, 255);
+  border-top:none;
+  border-right:none;
+  border-radius:0px 0px 0px 5px;
+}
+
+.task-quick{
+  display:block;
+  position: relative;
+}
+
+.task-remove-container{
+  display:none;
+  text-align: center;
+  position: absolute;
+  right:0;
+  top:0;
+}
+
+.task-remove-container:hover{
+  color:red;
+}
+
+.task-title-container{
+  display: inline-block;
+  margin-left:10px;
+}
+
+.task-detail{
+  position: relative;
+  display:block;
+  margin-left: 30px;
+  animation: scaleInAnimation ease .5s;
+  transform-origin: top;
+}
+
+
+@keyframes scaleInAnimation { 
+  0% { 
+      transform: scaleY(0); 
+  } 
+  100% { 
+      transform: scaleY(1); 
+   } 
+  }
+
+
+  .add-task{
+    display: inline-block;
+    width:40px;
+    height:20px;
+    
+    transition: .25s ease;
+    text-align:center;
+    border-radius:50%;
+    margin:0px;
+    margin-bottom:10px;
+  }
+
+  .plusIcon{
+    color:black;
+    transition:.2s ease;
+    font-size: 30px;
+  }
+
+  .circleIcon{
+    color: rgb(0, 225, 255);
+    transition: .2s ease;
+    font-size: 25px;
+  }
+
+  .add-task:hover .circleIcon{
+    color:black;
+  }
+
+  .fa-layers{
+    text-align: center;
+    font-size:24px
+  }
+
+  .add-task:hover .plusIcon{
+    color: rgb(0, 225, 255)
+  }
+
+
+
+  #page-mask {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  #add-project-form {
+    height: 400px;
+    width: 600px;
+    position:fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    background:black;
+    border-radius:5px;
+    color:white;
+  }
+
+form input[type=text], form textarea{
+  width: 85%;
+  
+  margin:auto;
+  margin:10px;
+  resize: none;
+  border:1px transparent;
+  border-radius:3px;
+  padding:10px;
+}
+
+form input[type=text]{
+  height:20px;
+}
+
+form ul{
+  list-style: none;
+  padding-left:40px;
+  padding-right:40px;
+}
+
+
+form input[type=submit]{
+  width: 60px;
+  height: 30px;
+  border: 1px transparent;
+  border-radius:3px;
+  margin:5px;
+  background: rgb(0, 225, 255);
+  color: black;
+  border: 1px solid black;
+  transition: .25s ease;
+}
+
+form input[type=submit]:hover{
+  background: black;
+  color: rgb(0, 225, 255);
+  border: 1px solid rgb(0, 225, 255);
+}
+
+#submit-btn-container{
+  display: flex;
+  justify-content: center;
+}
+
+.project-complete-container{
+  width:40px;
+  height:40px;
+  position: absolute;
+  top:0;
+  left:0;
+  border-radius:10px 0px 5px 0px;
+  border:1px solid black;
+  border-left: 1px transparent;
+  border-top:1px transparent;
+}
+
+.projectDetailFrame{
+  position: relative;
+}
+
+.complete-project{
+  font-size: 30px;
+  text-align: center;
+  color:green;
+}
+
