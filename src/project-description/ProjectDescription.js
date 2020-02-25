@@ -120,7 +120,7 @@ class ProjectTaskList extends React.Component {
     console.log(this.state.tasks);
     let projectTasks;
     if (this.props.selectedTasks) {
-      projectTasks = this.props.selectedTasks.map((task, index) => (
+      projectTasks = this.state.tasks.map((task, index) => (
         <ProjectTask
           updateSelectedTasksHandler={this.props.updateSelectedTasksHandler}
           projectTitle={this.props.title}
